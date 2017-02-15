@@ -1,99 +1,395 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
-<title>Basic 83</title>
-<meta charset="iso-8859-1">
-<link rel="stylesheet" href="styles/layout.css" type="text/css">
-<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Foundation | Welcome</title>
+<link rel="stylesheet" href="css/foundation.css">
+<link rel="stylesheet" href="css/app.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel='stylesheet' type='text/css'>
+ 
 </head>
 <body>
-<div class="wrapper row1">
-  <header id="header" class="clear">
-    <div id="hgroup">
-      <h1><a href="#">Basic 83</a></h1>
-      <h2>Free HTML5 Website Template</h2>
+ 
+<style>
+    .sticky {
+  width: 100%;
+    }
+    .row {
+  max-width: 1200px; }
+
+    .footer {
+      background-color: #292c2f;
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 4rem; }
+      .footer .inline-list a {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        background-color: #33383b;
+        border-radius: 2px;
+        font-size: 1.5rem;
+        color: #fff;
+        text-align: center;
+        line-height: 35px;
+        margin: 0 3px 0 0; }
+      .footer .contact {
+        list-style-type: none;
+        margin: 0;
+        text-align: left;
+        color: #fff; }
+        .footer .contact li {
+          margin-bottom: 2rem; }
+          .footer .contact li p {
+            padding-left: 5rem; }
+        .footer .contact i {
+          position: absolute;
+          background-color: #33383b;
+          color: #fff;
+          font-size: 2rem;
+          border-radius: 50%;
+          line-height: 1;
+          margin: 0 0 0 -4rem;
+          vertical-align: middle;
+          padding: .25em .45em; }
+      .footer .copywrite {
+        color: #8f9296;
+        font-size: 0.875rem;
+        margin: 0 0 1rem 0; }
+      .footer .about {
+        color: #92999f;
+        font-size: 0.875rem;
+        margin: 0 0 1rem 0; }
+      .footer .footer-links a {
+        list-style: none;
+        font-weight: normal;
+        color: #fff;
+        padding: 3rem 0 2rem;
+        margin: 0;
+        font-size: 0.875rem; }
+        .footer .footer-links a::after {
+          content: "•";
+          padding: 0 0.2rem 0 0.4rem; }
+        .footer .footer-links a:last-child::after {
+          content: "";
+          padding: 0 0.4rem 0 0.8rem; }
+      @media only screen and (min-width: 40.063em) {
+        .footer p {
+          text-align: left; }
+        .footer .social {
+          text-align: left;
+          margin: 0; }
+        .footer .contact {
+          text-align: left; }
+          .footer .contact > i {
+            margin-right: 1rem; } }
+
+    .logo {
+      color: #fff;
+      font-size: 1.5rem; }
+      .logo i {
+        margin-right: 0.5rem; }
+        }
+</style>
+<style>.fi-social-facebook{color:dodgerblue;font-size:2rem;}.fi-social-youtube{color:red;font-size:2rem;}.fi-social-pinterest{color:darkred;font-size:2rem;}i.fi-social-instagram{color:brown;font-size:2rem;}i.fi-social-tumblr{color:navy;font-size:2rem;}.fi-social-twitter{color:skyblue;font-size:2rem;}</style>
+    
+<div id="page">
+  <div class="top-bar-container" data-sticky-container>
+    <div style="z-index: 15;" class="sticky" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+      <div class="top-bar">
+        <div class="row column">
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="menu-text">Site Title</li>
+              <li class="has-submenu">
+                <a href="#">One</a>
+                <ul class="submenu menu vertical" data-submenu>
+                  <li><a href="#">One</a></li>
+                  <li><a href="#">Two</a></li>
+                  <li><a href="#">Three</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+              <li>
+                <input type="search" placeholder="Search">
+              </li>
+              <li>
+                <button type="button" class="button">Search</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <form action="#" method="post">
-      <fieldset>
-        <legend>Search:</legend>
-        <input type="text" value="Search Our Website&hellip;" onFocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;">
-        <input type="submit" id="sf_submit" value="submit">
-      </fieldset>
-    </form>
-    <nav>
-      <ul>
-        <li><a href="#">Text Link</a></li>
-        <li><a href="#">Text Link</a></li>
-        <li><a href="#">Text Link</a></li>
-        <li><a href="#">Text Link</a></li>
-        <li class="last"><a href="#">Text Link</a></li>
-      </ul>
-    </nav>
-  </header>
-</div>
-<!-- content -->
-<div class="wrapper row2">
-  <div id="container" class="clear">
-    <!-- content body -->
-    <section id="slider"><a href="#"><img src="images/demo/960x280.gif" alt=""></a></section>
-    <!-- main content -->
-    <div id="homepage">
-      <!-- services area -->
-      <section id="services" class="clear">
-        <article class="one_quarter">
-          <figure><img src="images/demo/32x32.gif" width="32" height="32" alt=""></figure>
-          <strong>Lorum ipsum dolor</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
-          <p class="more"><a href="#">Read More &raquo;</a></p>
-        </article>
-        <article class="one_quarter">
-          <figure><img src="images/demo/32x32.gif" width="32" height="32" alt=""></figure>
-          <strong>Lorum ipsum dolor</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
-          <p class="more"><a href="#">Read More &raquo;</a></p>
-        </article>
-        <article class="one_quarter">
-          <figure><img src="images/demo/32x32.gif" width="32" height="32" alt=""></figure>
-          <strong>Lorum ipsum dolor</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
-          <p class="more"><a href="#">Read More &raquo;</a></p>
-        </article>
-        <article class="one_quarter lastbox">
-          <figure><img src="images/demo/32x32.gif" width="32" height="32" alt=""></figure>
-          <strong>Lorum ipsum dolor</strong>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper.</p>
-          <p class="more"><a href="#">Read More &raquo;</a></p>
-        </article>
-      </section>
-      <!-- / services area -->
-      <!-- ########################################################################################## -->
-      <!-- ########################################################################################## -->
-      <!-- ########################################################################################## -->
-      <!-- ########################################################################################## -->
-      <section class="last clear">
-        <article class="three_quarter">
-          <h2>Lorum ipsum dolor</h2>
-          <p>This is a W3C compliant free website template from <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a>. For full terms of use of this template please read our <a href="http://www.os-templates.com/template-terms">website template licence</a>.</p>
-          <p>You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files. For more HTML5 templates visit <a href="http://www.os-templates.com/">free website templates</a>.</p>
-          <footer class="more"><a href="#">Read More &raquo;</a></footer>
-        </article>
-        <article class="one_quarter lastbox">
-          <h2>Lorum ipsum dolor</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque. Quisque non luctus sem.</p>
-          <footer class="more"><a href="#">Read More &raquo;</a></footer>
-        </article>
-      </section>
-      <!-- / Two Third -->
-    </div>
-    <!-- / content body -->
   </div>
+ 
+<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+<ul class="orbit-container">
+<button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+<button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+<li class="orbit-slide is-active">
+<img src="photos/1.png">
+</li>
+<li class="orbit-slide">
+<img src="photos/2.png">
+</li>
+<li class="orbit-slide">
+<img src="photos/3.png">
+</li>
+<li class="orbit-slide">
+<img src="photos/4.png">
+</li>
+</ul>
 </div>
-<!-- Footer -->
-<div class="wrapper row3">
-  <footer id="footer" class="clear">
-    <p class="fl_left">Copyright &copy; 2012 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-  </footer>
+<hr>
+<div class="row column">
+<h4 style="margin: 0;" class="text-center">LATEST STORIES</h4>
 </div>
+<hr>
+<div class="row">
+<div class="large-8 columns" style="border-right: 1px solid #E3E5E8;">
+<article>
+<div class="row">
+<div class="large-6 columns">
+<p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
+</div>
+<div class="large-6 columns">
+<h5><a href="#">'Death Star' Vaporizes Its Own Planet</a></h5>
+<p>
+<span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
+<span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+<span><i class="fi-comments"> 6 comments</i></span>
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="large-6 columns">
+<p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
+</div>
+<div class="large-6 columns">
+<h5><a href="#">NASA's SLS Rocket Sheds Saturn V Color Scheme in Design Review</a></h5>
+<p>
+<span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
+<span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+<span><i class="fi-comments"> 6 comments</i></span>
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="large-6 columns">
+<p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
+</div>
+<div class="large-6 columns">
+<h5><a href="#">Ingredients for Life Were Always Present on Earth, Comet Suggests</a></h5>
+<p>
+<span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
+<span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+<span><i class="fi-comments"> 6 comments</i></span>
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="large-6 columns">
+<p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
+</div>
+<div class="large-6 columns">
+<h5><a href="#">Astronaut's Watch Worn on the Moon Sells for Record $1.6 Million</a></h5>
+<p>
+<span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
+<span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+<span><i class="fi-comments"> 6 comments</i></span>
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="large-6 columns">
+<p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
+</div>
+<div class="large-6 columns">
+<h5><a href="#">Interstellar Dust on the Galaxy's Magnetic Field | Space Wallpaper</a></h5>
+<p>
+<span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
+<span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+<span><i class="fi-comments"> 6 comments</i></span>
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="large-6 columns">
+<p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
+</div>
+<div class="large-6 columns">
+<h5><a href="#">Explore the Moon (Virtually) with These Awesome Global Maps</a></h5>
+<p>
+<span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
+<span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+<span><i class="fi-comments"> 6 comments</i></span>
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+</div>
+</div>
+<hr>
+<div class="row">
+<div class="large-6 columns">
+<p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
+</div>
+<div class="large-6 columns">
+<h5><a href="#">Best Space Books and Sci-Fi: A Space.com Reading List</a></h5>
+<p>
+<span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
+<span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
+<span><i class="fi-comments"> 6 comments</i></span>
+</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+</div>
+</div>
+<hr>
+<ul class="pagination" role="navigation" aria-label="Pagination">
+<li class="disabled">Previous <span class="show-for-sr">page</span></li>
+<li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+<li><a href="#" aria-label="Page 2">2</a></li>
+<li><a href="#" aria-label="Page 3">3</a></li>
+<li><a href="#" aria-label="Page 4">4</a></li>
+<li><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+</ul>
+</article>
+</div>
+<div class="large-4 columns">
+<aside>
+<div class="row small-up-3">
+<div class="column text-center">
+<i class="fi-social-facebook"></i>
+<h6>56,009</h6>
+<p><small>FOLLOWERS</small></p>
+<br>
+</div>
+<div class="column text-center">
+<i class="fi-social-twitter"></i>
+<h6>76,905</h6>
+<p><small>FOLLOWERS</small></p>
+<br>
+</div>
+<div class="column text-center">
+<i class="fi-social-instagram"></i>
+<h6>34,099</h6>
+<p><small>FOLLOWERS</small></p>
+<br>
+</div>
+<div class="column text-center">
+<i class="fi-social-tumblr"></i>
+<h6>13,765</h6>
+<p><small>FOLLOWERS</small></p>
+</div>
+<div class="column text-center">
+<i class="fi-social-pinterest"></i>
+<h6>9,283</h6>
+<p><small>FOLLOWERS</small></p>
+</div>
+<div class="column text-center">
+<i class="fi-social-youtube"></i>
+<h6>99,000</h6>
+<p><small>FOLLOWERS</small></p>
+</div>
+</div>
+<br>
+<div class="row column">
+<p class="lead">FROM OUR FRIENDS</p>
+<p><img src="https://placehold.it/400x300&text=Buy Me!" alt="advertisement of ShamWow"></p>
+</div>
+<br>
+<div class="row column">
+<p class="lead">TRENDING POSTS</p>
+<div class="media-object">
+<div class="media-object-section">
+<img class="thumbnail" src="https://placehold.it/100">
+</div>
+<div class="media-object-section">
+<h5>All I need is a space suit and I'm ready to go.</h5>
+</div>
+</div>
+<div class="media-object">
+<div class="media-object-section">
+<img class="thumbnail" src="https://placehold.it/100">
+</div>
+<div class="media-object-section">
+<h5>Are the stars out tonight? I don't know if it's cloudy or bright.</h5>
+</div>
+</div>
+<div class="media-object">
+<div class="media-object-section">
+<img class="thumbnail" src="https://placehold.it/100">
+</div>
+<div class="media-object-section">
+<h5>And the world keeps spinning.</h5>
+</div>
+</div>
+<div class="media-object">
+<div class="media-object-section">
+<img class="thumbnail" src="https://placehold.it/100">
+</div>
+<div class="media-object-section">
+<h5>Cold hearted orb that rules the night.</h5>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<footer class="footer">
+  <div class="row">
+    <div class="small-12 medium-6 large-5 columns">
+      <p class="logo"><i class="fi-shield"></i> STARWARS</p> 
+      <p class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+        <a href="#">About</a>
+        <a href="#">Faq</a>
+        <a href="#">Contact</a>
+      </p>
+      <p class="copywrite">Copywrite not copywrite © 2015</p>
+    </div>
+    <div class="small-12 medium-6 large-4 columns">
+      <ul class="contact">
+        <li><p><i class="fi-marker"></i>1595 Spring Street New Britain, CT 06051</p></li>
+        <li><p><i class="fi-telephone"></i>+1-656-453-9966</p></li>
+        <li><p><i class="fi-mail"></i>contact@emperor.com</p></li>
+      </ul>
+    </div>
+    <div class="small-12 medium-12 large-3 columns">
+      <p class="about">About Star Wars</p>
+      <p class="about subheader">Strike me down, and I will become more powerful than you could possibly imagine.</p>
+      <ul class="inline-list social">
+        <a href="#"><i class="fi-social-facebook"></i></a>
+        <a href="#"><i class="fi-social-twitter"></i></a>
+        <a href="#"><i class="fi-social-linkedin"></i></a>
+        <a href="#"><i class="fi-social-github"></i></a>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script>
+      $(document).foundation();
+    </script>
+<script type="text/javascript" src="https://intercom.zurb.com/scripts/zcom.js"></script>
 </body>
 </html>
