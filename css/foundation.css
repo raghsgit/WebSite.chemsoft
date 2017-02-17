@@ -4416,7 +4416,8 @@ font-weight: bold;}
         .footer .contact li {
           margin-bottom: 2rem; }
           .footer .contact li p {
-            padding-left: 5rem; }
+            padding-left: 5rem;
+           font-size: 1rem;}
         .footer .contact i {
           position: absolute;
           background-color: #33383b;
