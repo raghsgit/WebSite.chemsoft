@@ -4,69 +4,186 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" href="photos/favicon.ico" type="image/x-icon">
 <title>Chemsoft Virtual Labs | Welcome</title>
 <link rel="stylesheet" href="css/foundation.css">
 <link rel="stylesheet" href="css/app.css">
+<script src="js/modernizr.custom.80028.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href='http://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
 <style>.fi-social-facebook{color:dodgerblue;font-size:2rem;}.fi-social-youtube{color:red;font-size:2rem;}.fi-social-pinterest{color:darkred;font-size:2rem;}i.fi-social-instagram{color:brown;font-size:2rem;}i.fi-social-tumblr{color:navy;font-size:2rem;}.fi-social-twitter{color:skyblue;font-size:2rem;}</style>
+<style>
+.parallax {
+    /* The image used */
+    background-image: url("photos/cover.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ #note {
+        position: absolute;
+        z-index: 101;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background: #fde073;
+        text-align: center;
+        line-height: 2.5;
+        overflow: hidden; 
+        -webkit-box-shadow: 0 0 5px black;
+        -moz-box-shadow:    0 0 5px black;
+        box-shadow:         0 0 5px black;
+    }
+    .cssanimations.csstransforms #note {
+        -webkit-transform: translateY(-50px);
+        -webkit-animation: slideDown 2.5s 1.0s 1 ease forwards;
+        -moz-transform:    translateY(-50px);
+        -moz-animation:    slideDown 2.5s 1.0s 1 ease forwards;
+    }
+
+    #close {
+      position: absolute;
+      right: 10px;
+      top: 9px;
+      text-indent: -9999px;
+      background: url(images/close.png);
+      height: 16px;
+      width: 16px;
+      cursor: pointer;
+    }
+    .cssanimations.csstransforms #close {
+      display: none;
+    }
+    
+    @-webkit-keyframes slideDown {
+        0%, 100% { -webkit-transform: translateY(-50px); }
+        10%, 90% { -webkit-transform: translateY(0px); }
+    }
+    @-moz-keyframes slideDown {
+        0%, 100% { -moz-transform: translateY(-50px); }
+        10%, 90% { -moz-transform: translateY(0px); }
+    }
+</style>
 </head>
 <body>
-<div id="page">
-  <div class="top-bar-container" data-sticky-container>
-    <div style="z-index: 15;" class="sticky" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
-     <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-         <div class="title-bar-middle">
-		<button class="menu-icon dark title-bar-left" type="button" data-toggle></button>Chemsoft
-		</div>
-      </div>
-      <div class="top-bar" id="example-menu">
-        <div class="row column">
-        <div class="top-bar-left">
-				<ul class="menu">
-						<li class="menu-text">Chemsoft Virtual Labs</li>
-				</ul>
-		</div>
-          <div class="top-bar-right">
-            <ul class="  medium-horizontal vertical dropdown menu" data-responsive-menu="accordion medium-dropdown">
-              <li class="has-submenu">
-                <a href="#">One</a>
-                <ul class="submenu menu vertical nested" data-submenu>
-                  <li><a href="#">One</a></li>
-                  <li><a href="#">Two</a></li>
-                  <li><a href="#">Three</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Two</a></li>
-              <li><a href="#">Three</a></li>
-            </ul>
-          </div>
+
+<div id="note">
+        The Site is under Construction. <a id="close">[close]</a>
+</div>
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-primary">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="photos/logo.jpg" width="30"class="d-inline-block align-top" alt="">
+        Chemsoft Virtual Labs
+      </a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav navbar-right">
+          <li class="navbar-nav mr-auto">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+            <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Chapters
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Student</a>
+          <a class="dropdown-item" href="#">Professional</a>
         </div>
-      </div>
-    </div>
+      </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Events
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Past</a>
+          <a class="dropdown-item" href="#">Upcoming</a>
+        </div>
+      </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Collaboration</a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Join
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Student Chapter</a>
+          <a class="dropdown-item" href="#">Professional Chapter</a>
+          <a class="dropdown-item" href="#">Individual Chapter</a>
+        </div>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Success Stories</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
+    </ul>
   </div>
+</nav>
 
 <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
 <ul class="orbit-container">
 <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
 <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
 <li class="orbit-slide is-active">
-<img src="photos/1.png">
+<img src="photos/1.jpg">
+<div class="orbit-caption">
+      Caption One.
+</div>
 </li>
 <li class="orbit-slide">
-<img src="photos/2.png">
+<img src="photos/2.jpg">
+<div class="orbit-caption">
+      Caption Two.
+</div>
 </li>
 <li class="orbit-slide">
-<img src="photos/3.png">
+<img src="photos/3.jpg">
+<div class="orbit-caption">
+      Caption Three.
+</div>
 </li>
 <li class="orbit-slide">
-<img src="photos/4.png">
+<img src="photos/4.jpg">
+<div class="orbit-caption">
+      Caption Four.
+</div>
 </li>
 </ul>
 </div>
+<div class="parallax">
+<div class="container" style="padding-top: 100px;">
 <hr>
-<div class="row column">
-<h4 style="margin: 0;" class="text-center">LATEST STORIES</h4>
+<h4 style="text-shadow: 2px 2px 4px #b3b3b3;margin: 0; text-align: center; font: italic bold 25px/50px Georgia, serif; " class="text-center">ABOUT US</h4>
+<hr>
+<div class="row">
+<div class="large-12 columns" style="border-right: 1px solid #E3E5E8;color: #262626; font-family: Enriqueta;">
+<p>Chemsoft Virtual Lab is one of the Vertical of EAST Foundation INDIA and provides a platform for budding Chemical Engineers to get exposure of IT fusion with chemical Engineering, get the zeal to work on chemical Engineering software and engaging oneself to professional and Academic network in-order to patch up the gap between Academia & Corporate. </br>
+
+CHEMSOFT VIRTUAL LAB is a humble initiative was taken by the 4th & 3rd (NIT CALICUT 2013) year students This is a great platform where students having a zeal to work on software’s related to CHEMICAL engineering will work as a group.</p>
 </div>
+</div>
+</div>
+</div>
+<div class="container" >
+<hr>
+<h4 style="text-shadow: 2px 2px 4px #b3b3b3;text-align: center; font: italic bold 25px/50px Georgia, serif;" class="text-center">LATEST STORIES</h4>
 <hr>
 <div class="row">
 <div class="large-8 columns" style="border-right: 1px solid #E3E5E8;">
@@ -76,13 +193,12 @@
 <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
 </div>
 <div class="large-6 columns">
-<h5><a href="#">'Death Star' Vaporizes Its Own Planet</a></h5>
+<h5><a href="#">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
 <p>
-<span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
-<span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
-<span><i class="fi-comments"> 6 comments</i></span>
+<span><i class="fi-torso"> By Chemsoft &nbsp;&nbsp;</i></span>
+<span><i class="fi-calendar"> 02-17-17 &nbsp;&nbsp;</i></span>
 </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+<p style="color: #262626; font-family: Enriqueta;">Physical distances and the lack of resources make us unable to perform experiments, especially when they involve sophisticated instruments. Also, good teachers are always a scarce resource. Web-based and video-based courses address the issue of teaching to some extent. Conducting joint experiments by two participating institutions and also sharing costly resources has always been a challenge. With the present day internet and computer technologies the above limitations can no more hamper students and researchers in enhancing their skills and knowledge.</p>
 </div>
 </div>
 <hr>
@@ -91,13 +207,12 @@
 <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
 </div>
 <div class="large-6 columns">
-<h5><a href="#">NASA's SLS Rocket Sheds Saturn V Color Scheme in Design Review</a></h5>
+<h5><a href="#">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
 <p>
-<span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
-<span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
-<span><i class="fi-comments"> 6 comments</i></span>
+<span><i class="fi-torso"> By Chemsoft &nbsp;&nbsp;</i></span>
+<span><i class="fi-calendar"> 02-17-17 &nbsp;&nbsp;</i></span>
 </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+<p style="color: #262626; font-family: Enriqueta;">Physical distances and the lack of resources make us unable to perform experiments, especially when they involve sophisticated instruments. Also, good teachers are always a scarce resource. Web-based and video-based courses address the issue of teaching to some extent. Conducting joint experiments by two participating institutions and also sharing costly resources has always been a challenge. With the present day internet and computer technologies the above limitations can no more hamper students and researchers in enhancing their skills and knowledge.</p>
 </div>
 </div>
 <hr>
@@ -106,13 +221,12 @@
 <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
 </div>
 <div class="large-6 columns">
-<h5><a href="#">Ingredients for Life Were Always Present on Earth, Comet Suggests</a></h5>
+<h5><a href="#">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
 <p>
-<span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
-<span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
-<span><i class="fi-comments"> 6 comments</i></span>
+<span><i class="fi-torso"> By Chemsoft &nbsp;&nbsp;</i></span>
+<span><i class="fi-calendar"> 02-17-17 &nbsp;&nbsp;</i></span>
 </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+<p style="color: #262626; font-family: Enriqueta;">Physical distances and the lack of resources make us unable to perform experiments, especially when they involve sophisticated instruments. Also, good teachers are always a scarce resource. Web-based and video-based courses address the issue of teaching to some extent. Conducting joint experiments by two participating institutions and also sharing costly resources has always been a challenge. With the present day internet and computer technologies the above limitations can no more hamper students and researchers in enhancing their skills and knowledge.</p>
 </div>
 </div>
 <hr>
@@ -121,13 +235,12 @@
 <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
 </div>
 <div class="large-6 columns">
-<h5><a href="#">Astronaut's Watch Worn on the Moon Sells for Record $1.6 Million</a></h5>
+<h5><a href="#">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
 <p>
-<span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
-<span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
-<span><i class="fi-comments"> 6 comments</i></span>
+<span><i class="fi-torso"> By Chemsoft &nbsp;&nbsp;</i></span>
+<span><i class="fi-calendar"> 02-17-17 &nbsp;&nbsp;</i></span>
 </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+<p style="color: #262626; font-family: Enriqueta;">Physical distances and the lack of resources make us unable to perform experiments, especially when they involve sophisticated instruments. Also, good teachers are always a scarce resource. Web-based and video-based courses address the issue of teaching to some extent. Conducting joint experiments by two participating institutions and also sharing costly resources has always been a challenge. With the present day internet and computer technologies the above limitations can no more hamper students and researchers in enhancing their skills and knowledge.</p>
 </div>
 </div>
 <hr>
@@ -136,13 +249,12 @@
 <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
 </div>
 <div class="large-6 columns">
-<h5><a href="#">Interstellar Dust on the Galaxy's Magnetic Field | Space Wallpaper</a></h5>
+<h5><a href="#">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
 <p>
-<span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
-<span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
-<span><i class="fi-comments"> 6 comments</i></span>
+<span><i class="fi-torso"> By Chemsoft &nbsp;&nbsp;</i></span>
+<span><i class="fi-calendar"> 02-17-17 &nbsp;&nbsp;</i></span>
 </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+<p style="color: #262626; font-family: Enriqueta;">Physical distances and the lack of resources make us unable to perform experiments, especially when they involve sophisticated instruments. Also, good teachers are always a scarce resource. Web-based and video-based courses address the issue of teaching to some extent. Conducting joint experiments by two participating institutions and also sharing costly resources has always been a challenge. With the present day internet and computer technologies the above limitations can no more hamper students and researchers in enhancing their skills and knowledge.</p>
 </div>
 </div>
 <hr>
@@ -151,13 +263,12 @@
 <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
 </div>
 <div class="large-6 columns">
-<h5><a href="#">Explore the Moon (Virtually) with These Awesome Global Maps</a></h5>
+<h5><a href="#">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
 <p>
-<span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
-<span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
-<span><i class="fi-comments"> 6 comments</i></span>
+<span><i class="fi-torso"> By Chemsoft &nbsp;&nbsp;</i></span>
+<span><i class="fi-calendar"> 02-17-17 &nbsp;&nbsp;</i></span>
 </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+<p style="color: #262626; font-family: Enriqueta;">Physical distances and the lack of resources make us unable to perform experiments, especially when they involve sophisticated instruments. Also, good teachers are always a scarce resource. Web-based and video-based courses address the issue of teaching to some extent. Conducting joint experiments by two participating institutions and also sharing costly resources has always been a challenge. With the present day internet and computer technologies the above limitations can no more hamper students and researchers in enhancing their skills and knowledge.</p>
 </div>
 </div>
 <hr>
@@ -166,13 +277,12 @@
 <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
 </div>
 <div class="large-6 columns">
-<h5><a href="#">Best Space Books and Sci-Fi: A Space.com Reading List</a></h5>
+<h5><a href="#">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
 <p>
-<span><i class="fi-torso"> By Thadeus &nbsp;&nbsp;</i></span>
-<span><i class="fi-calendar"> 11/23/16 &nbsp;&nbsp;</i></span>
-<span><i class="fi-comments"> 6 comments</i></span>
+<span><i class="fi-torso"> By Chemsoft &nbsp;&nbsp;</i></span>
+<span><i class="fi-calendar"> 02-17-17 &nbsp;&nbsp;</i></span>
 </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae impedit beatae, ipsum delectus aperiam nesciunt magni facilis ullam.</p>
+<p style="color: #262626; font-family: Enriqueta;">Physical distances and the lack of resources make us unable to perform experiments, especially when they involve sophisticated instruments. Also, good teachers are always a scarce resource. Web-based and video-based courses address the issue of teaching to some extent. Conducting joint experiments by two participating institutions and also sharing costly resources has always been a challenge. With the present day internet and computer technologies the above limitations can no more hamper students and researchers in enhancing their skills and knowledge.</p>
 </div>
 </div>
 <hr>
@@ -188,41 +298,6 @@
 </div>
 <div class="large-4 columns">
 <aside>
-<div class="row small-up-3">
-<div class="column text-center">
-<i class="fi-social-facebook"></i>
-<h6>56,009</h6>
-<p><small>FOLLOWERS</small></p>
-<br>
-</div>
-<div class="column text-center">
-<i class="fi-social-twitter"></i>
-<h6>76,905</h6>
-<p><small>FOLLOWERS</small></p>
-<br>
-</div>
-<div class="column text-center">
-<i class="fi-social-instagram"></i>
-<h6>34,099</h6>
-<p><small>FOLLOWERS</small></p>
-<br>
-</div>
-<div class="column text-center">
-<i class="fi-social-tumblr"></i>
-<h6>13,765</h6>
-<p><small>FOLLOWERS</small></p>
-</div>
-<div class="column text-center">
-<i class="fi-social-pinterest"></i>
-<h6>9,283</h6>
-<p><small>FOLLOWERS</small></p>
-</div>
-<div class="column text-center">
-<i class="fi-social-youtube"></i>
-<h6>99,000</h6>
-<p><small>FOLLOWERS</small></p>
-</div>
-</div>
 <br>
 <div class="row column">
 <p class="lead">FROM OUR FRIENDS</p>
@@ -267,32 +342,36 @@
 </aside>
 </div>
 </div>
+</div>
 <footer class="footer">
   <div class="row">
-    <div class="small-12 medium-6 large-5 columns">
-      <p class="logo"><i class="fi-shield"></i> STARWARS</p> 
+    <div class="small-12 medium-5 large-4 columns">
+      <p class="logo"><i class="fi-shield"></i> CHEMSOFT VIRTUAL LABS</p> 
       <p class="footer-links">
         <a href="#">Home</a>
-        <a href="#">Blog</a>
-        <a href="#">Pricing</a>
-        <a href="#">About</a>
-        <a href="#">Faq</a>
+        <a href="#">About Us</a>
+        <a href="#">Chapters</a>
+        <a href="#">Projects</a>
+        <a href="#">Eents</a>
+        <a href="#">Collaboration</a>
+        <a href="#">Join</a>
+        <a href="#">Success Stories</a>
         <a href="#">Contact</a>
       </p>
-      <p class="copywrite">Copywrite not copywrite © 2015</p>
+      <p class="copywrite">Chemsoft Virtual Labs © 2017</p>
     </div>
     <div class="small-12 medium-6 large-4 columns">
       <ul class="contact">
-        <li><p><i class="fi-marker"></i>1595 Spring Street New Britain, CT 06051</p></li>
-        <li><p><i class="fi-telephone"></i>+1-656-453-9966</p></li>
-        <li><p><i class="fi-mail"></i>contact@emperor.com</p></li>
+        <li><p><i class="fi-marker"></i>2nd floor, Nishith Plaza, Near Engineering College Chauraha, Jankipuram, Lucknow</p></li>
+        <li><p><i class="fi-telephone"></i>+91-7379430153</p></li>
+        <li><p><i class="fi-mail"></i>chemsoftvl220813@gmail.com</p></li>
       </ul>
     </div>
     <div class="small-12 medium-12 large-3 columns">
-      <p class="about">About Star Wars</p>
-      <p class="about subheader">Strike me down, and I will become more powerful than you could possibly imagine.</p>
+      <p class="about">About Chemsoft</p>
+      <p class="about subheader">Chemsoft Virtual Lab is one of the Vertical of EAST Foundation INDIA and provides a platform for budding Chemical Engineers to get exposure of IT fusion with chemical Engineering.</p>
       <ul class="inline-list social">
-        <a href="#"><i class="fi-social-facebook"></i></a>
+        <a target="_blank" href="https://www.facebook.com/pg/chemsoftvirtuallabs/about/?ref=page_internal"><i class="fi-social-facebook"></i></a>
         <a href="#"><i class="fi-social-twitter"></i></a>
         <a href="#"><i class="fi-social-linkedin"></i></a>
         <a href="#"><i class="fi-social-github"></i></a>
@@ -305,6 +384,14 @@
 <script>
       $(document).foundation();
     </script>
+<script>
+   close = document.getElementById("close");
+   close.addEventListener('click', function() {
+     note = document.getElementById("note");
+     note.style.display = 'none';
+   }, false);
+  </script>
 <script type="text/javascript" src="https://intercom.zurb.com/scripts/zcom.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 </html>
