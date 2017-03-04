@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/app.css">
     <script src="js/modernizr.custom.80028.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Pridi" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -120,6 +121,39 @@
         div #opa {
             background: rgba(230, 230, 230, 0.7);
         }
+
+        blockquote {
+            font-family: Georgia, serif;
+            font-size: 18px;
+            font-style: italic;
+            margin: 0.25em 0;
+            padding: 0.35em 40px;
+            line-height: 1.45;
+            position: relative;
+            color: #383838;
+        }
+
+        blockquote:before {
+            display: block;
+            padding-left: 10px;
+            content: "\201C";
+            font-size: 80px;
+            position: absolute;
+            left: -20px;
+            top: -20px;
+            color: #7a7a7a;
+        }
+
+        blockquote cite {
+            color: #999999;
+            font-size: 14px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        blockquote cite:before {
+            content: "\2014 \2009";
+        }
     </style>
 </head>
 
@@ -218,47 +252,65 @@
             </li>
         </ul>
     </div>
-    <div class="parallax">
-        <div class="container" style="padding: 40px;">
-            <h4 style="margin: 0; text-align: center; color:#000; letter-spacing: 2px; text-shadow: 2px 2px 4px #fff; font-size: 2.5em; font-family: 'Racing Sans One', cursive; padding-bottom: 50px; " class="text-center">ABOUT US</h4>
-            <div class="w3-card-4" style="width:100%;" id="opa">
-                <div class="w3-container" style="padding: 50px;">
-                    <p style="color: #262626; font-family: Enriqueta; padding-top:10px;">CHEMSOFT VIRTUAL LABS is an attempt aimed at development of the most important resource of the country, the students, with mutual benefits to professors, researchers and corporates alike. CSVL, as we call it, is a simple platform arising
-                        out of the needs that we faced as students being trained for the competitive world ahead of us. Most engineering courses in the country, no matter what institute we talk about, pay more attention to theoretical knowledge and are
-                        unable to cater to the need of students when it comes to latest technological advancements, especially knowledge enhancing softwares. Students thereby resort to commercially available workshops and sources to learn professional
-                        softwares. Stage one of our initiative, is thereby, development of student knowledge and make them a valuable resources ready for industry and research. At CSVL, we build student knowledge via student participation. Students are
-                        trained at affordable costs and guided through the basics and advanced levels of software knowledge. This group of trained students, in turn, furthers the knowledge tree by helping their peers and juniors, thus developing a student
-                        community, which is interested in their field of study and conceptually strong apart from having just theoretical knowledge. Stage two of Chemsoft Virtual Labs is interaction and association. India has no dearth of human resource,
-                        and a talented one at that. We have brilliant students, trained professors, hardworking researches and fast developing industries. What we lack is mutual association or connecting links between the resource provider and the beneficiary.
-                        CHEMSOFT VIRTUAL LABS is a platform that brings all these four domains under one single umbrella of mutual gain. The portal shall bring together the four realms in an informative and interactive manner, which will help solving
-                        technical issues and conceptual irregularities on a virtual basis. Under CSVL, there is something for everybody. While the students stand to gain from the real world exposure and industrial knowledge, researches can map their progress
-                        against the current industrial scenario for a first hand estimation. Professors stand to benefit as CSVL provides them an opportunity to relate their academic fundamental concepts with real life corporate world. They can match
-                        their teaching methods to the needs of the industry and provide guidance and mentorship to students and researchers in forms of answers, short-term projects and digital assistance. The corporates, via CSVL, get access to the best
-                        brains that the market has to offer. Useful insights, necessary workforce and new ideas; the corporates have an access to all of this while they help the other wings to grow and stay in touch with the current market needs. “Through
-                        others we become ourselves.” ― Lev S. Vygotsky CSVL intends to strengthen professional relations between all sectors of the chemical industry and academia using information technology as our most easily available tool. The cycle
-                        of need and availibity exists between all parts of our society. While students strive for experience, professors yearn for application of their concepts and expertise. Researchers are looking for opportunities in the market and
-                        the industrial world is always on the lookout for trained personnel and creative ideas. All parts of the cycle now stand as individual units, handicapped due to lack of interaction with the other units that could essentially be
-                        a symbiotic relationship. CHEMSOFT VIRTUAL LABS is just that humble and honest attempt to make sure the cycle is complete.
+    <!-- <div class="parallax"> -->
+    <div class="container" style="padding: 40px;">
+        <h4 style="margin: 0; text-align: center; color:#000; letter-spacing: 2px; font-size: 2.5em; font-family: 'Courgette', cursive; padding-bottom: 50px; " class="text-center">ABOUT US</h4>
+        <div class="w3-card-4" style="width:100%;" id="opa">
+            <div class="w3-container" style="padding: 50px;">
+                <blockquote>
+                    <p style="text-align: center;">
+                        Why just learn it, when you could teach and master it?
                     </p>
-                </div>
+                </blockquote>
+                <p style="color: #262626; font-family: 'Enriqueta', cursive; padding-top:10px; text-align:center;">CHEMSOFT VIRTUAL LABS is an attempt aimed at development of the most important resource of the country, the students, with mutual benefits to professors, researchers and corporates alike. CSVL, as we call it, is a simple platform arising
+                    out of the needs that we faced as students being trained for the competitive world ahead of us.
+                </p>
+                <p style="color: #262626; font-family: 'Enriqueta', cursive; padding-top:10px; text-align:center;">Most engineering courses in the country, no matter what institute we talk about, pay more attention to theoretical knowledge and are unable to cater to the need of students when it comes to latest technological advancements, especially
+                    knowledge enhancing softwares. Students thereby resort to commercially available workshops and sources to learn professional softwares.
+                </p>
+                <p style="color: #262626; font-family: 'Enriqueta', cursive; padding-top:10px; text-align:center;">Stage one of our initiative, is thereby, development of student knowledge and make them a valuable resources ready for industry and research. At CSVL, we build student knowledge via student participation. Students are trained at affordable
+                    costs and guided through the basics and advanced levels of software knowledge. This group of trained students, in turn, furthers the knowledge tree by helping their peers and juniors, thus developing a student community, which is interested
+                    in their field of study and conceptually strong apart from having just theoretical knowledge.
+                </p>
+                <p style="color: #262626; font-family: 'Enriqueta', cursive; padding-top:10px; text-align:center;">Stage two of Chemsoft Virtual Labs is interaction and association. India has no dearth of human resource, and a talented one at that. We have brilliant students, trained professors, hardworking researches and fast developing industries.
+                    What we lack is mutual association or connecting links between the resource provider and the beneficiary. CHEMSOFT VIRTUAL LABS is a platform that brings all these four domains under one single umbrella of mutual gain. The portal shall
+                    bring together the four realms in an informative and interactive manner, which will help solving technical issues and conceptual irregularities on a virtual basis.
+                </p>
+                <p style="color: #262626; font-family: 'Enriqueta', cursive; padding-top:10px; text-align:center;">Under CSVL, there is something for everybody. While the students stand to gain from the real world exposure and industrial knowledge, researches can map their progress against the current industrial scenario for a first hand estimation.
+                    Professors stand to benefit as CSVL provides them an opportunity to relate their academic fundamental concepts with real life corporate world. They can match their teaching methods to the needs of the industry and provide guidance
+                    and mentorship to students and researchers in forms of answers, short-term projects and digital assistance. The corporates, via CSVL, get access to the best brains that the market has to offer. Useful insights, necessary workforce
+                    and new ideas; the corporates have an access to all of this while they help the other wings to grow and stay in touch with the current market needs.
+                </p>
+                <blockquote>
+                    <p style="text-align: center;">
+                        Through others we become ourselves.
+                        <cite> Lev S. Vygotsky</cite>
+                    </p>
+                </blockquote>
+                <p style="color: #262626; font-family: 'Enriqueta', cursive; padding-top:10px; text-align:center;">CSVL intends to strengthen professional relations between all sectors of the chemical industry and academia using information technology as our most easily available tool. The cycle of need and availibity exists between all parts of our
+                    society. While students strive for experience, professors yearn for application of their concepts and expertise. Researchers are looking for opportunities in the market and the industrial world is always on the lookout for trained
+                    personnel and creative ideas. All parts of the cycle now stand as individual units, handicapped due to lack of interaction with the other units that could essentially be a symbiotic relationship. CHEMSOFT VIRTUAL LABS is just that
+                    humble and honest attempt to make sure the cycle is complete.
+                </p>
             </div>
         </div>
     </div>
+    <!-- </div> -->
     <div class="container">
-        <h4 style="text-align: center; color:#000; letter-spacing: 2px; text-shadow: 2px 2px 4px #fff; font-size: 2.5em; font-family: 'Racing Sans One', cursive; padding-top:20px; padding-bottom: 20px;" class="text-center">LATEST STORIES</h4>
+        <h4 style="text-align: center; color:#000; letter-spacing: 2px; font-size: 2.5em; font-family: 'Courgette', cursive; padding-top:20px; padding-bottom: 20px;" class="text-center">LATEST STORIES</h4>
         <div class="row">
-            <div class="large-8 columns" style="border-right: 1px solid #E3E5E8;">
+            <div class="large-12 columns" style="border-right: 1px solid #E3E5E8;">
                 <article>
                     <div class="row">
-                        <div class="large-6 columns">
-                            <div class="w3-card-12" style="width:100%">
+                        <div class="large-4 columns">
+                            <div class="w3-hover-shadow" style="width:100%">
                                 <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
                             </div>
                         </div>
-                        <div class="large-6 columns">
-                            <header class="w3-container w3-blue" style="padding-top: 10px;">
-                                <h5><a href="#" style="color: white;">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
-                                <p>
+                        <div class="large-8 columns">
+                            <header class="w3-container w3-blue" style="padding-top: 10px; font-family: 'Pridi', serif;">
+                                <h5><a href="#" style="color: white; font-size: 1.2em;">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
+                                <p style="font-size: 1.2em;">
                                     <span><i class="fi-torso"> By Chemsoft &nbsp;&nbsp;</i></span>
                                     <span><i class="fi-calendar"> 02-17-17 &nbsp;&nbsp;</i></span>
                                 </p>
@@ -274,15 +326,15 @@
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="large-6 columns">
-                            <div class="w3-card-12" style="width:100%">
+                        <div class="large-4 columns">
+                            <div class="w3-hover-shadow" style="width:100%">
                                 <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
                             </div>
                         </div>
-                        <div class="large-6 columns">
-                            <header class="w3-container w3-blue" style="padding-top: 10px;">
-                                <h5><a href="#" style="color: white;">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
-                                <p>
+                        <div class="large-8 columns">
+                            <header class="w3-container w3-blue" style="padding-top: 10px; font-family: 'Pridi', serif;">
+                                <h5><a href="#" style="color: white; font-size: 1.2em;">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
+                                <p style="font-size: 1.2em;">
                                     <span><i class="fi-torso"> By Chemsoft &nbsp;&nbsp;</i></span>
                                     <span><i class="fi-calendar"> 02-17-17 &nbsp;&nbsp;</i></span>
                                 </p>
@@ -298,15 +350,15 @@
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="large-6 columns">
-                            <div class="w3-card-12" style="width:100%">
+                        <div class="large-4 columns">
+                            <div class="w3-hover-shadow" style="width:100%">
                                 <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
                             </div>
                         </div>
-                        <div class="large-6 columns">
-                            <header class="w3-container w3-blue" style="padding-top: 10px;">
-                                <h5><a href="#" style="color: white;">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
-                                <p>
+                        <div class="large-8 columns">
+                            <header class="w3-container w3-blue" style="padding-top: 10px; font-family: 'Pridi', serif;">
+                                <h5><a href="#" style="color: white; font-size: 1.2em;">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
+                                <p style="font-size: 1.2em;">
                                     <span><i class="fi-torso"> By Chemsoft &nbsp;&nbsp;</i></span>
                                     <span><i class="fi-calendar"> 02-17-17 &nbsp;&nbsp;</i></span>
                                 </p>
@@ -322,15 +374,15 @@
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="large-6 columns">
-                            <div class="w3-card-12" style="width:100%">
+                        <div class="large-4 columns">
+                            <div class="w3-hover-shadow" style="width:100%">
                                 <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
                             </div>
                         </div>
-                        <div class="large-6 columns">
-                            <header class="w3-container w3-blue" style="padding-top: 10px;">
-                                <h5><a href="#" style="color: white;">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
-                                <p>
+                        <div class="large-8 columns">
+                            <header class="w3-container w3-blue" style="padding-top: 10px; font-family: 'Pridi', serif;">
+                                <h5><a href="#" style="color: white; font-size: 1.2em;">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
+                                <p style="font-size: 1.2em;">
                                     <span><i class="fi-torso"> By Chemsoft &nbsp;&nbsp;</i></span>
                                     <span><i class="fi-calendar"> 02-17-17 &nbsp;&nbsp;</i></span>
                                 </p>
@@ -346,15 +398,15 @@
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="large-6 columns">
-                            <div class="w3-card-12" style="width:100%">
+                        <div class="large-4 columns">
+                            <div class="w3-hover-shadow" style="width:100%">
                                 <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
                             </div>
                         </div>
-                        <div class="large-6 columns">
-                            <header class="w3-container w3-blue" style="padding-top: 10px;">
-                                <h5><a href="#" style="color: white;">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
-                                <p>
+                        <div class="large-8 columns">
+                            <header class="w3-container w3-blue" style="padding-top: 10px; font-family: 'Pridi', serif;">
+                                <h5><a href="#" style="color: white; font-size: 1.2em;">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
+                                <p style="font-size: 1.2em;">
                                     <span><i class="fi-torso"> By Chemsoft &nbsp;&nbsp;</i></span>
                                     <span><i class="fi-calendar"> 02-17-17 &nbsp;&nbsp;</i></span>
                                 </p>
@@ -370,15 +422,15 @@
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="large-6 columns">
-                            <div class="w3-card-12" style="width:100%">
+                        <div class="large-4 columns">
+                            <div class="w3-hover-shadow" style="width:100%">
                                 <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
                             </div>
                         </div>
-                        <div class="large-6 columns">
-                            <header class="w3-container w3-blue" style="padding-top: 10px;">
-                                <h5><a href="#" style="color: white;">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
-                                <p>
+                        <div class="large-8 columns">
+                            <header class="w3-container w3-blue" style="padding-top: 10px; font-family: 'Pridi', serif;">
+                                <h5><a href="#" style="color: white; font-size: 1.2em;">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
+                                <p style="font-size: 1.2em;">
                                     <span><i class="fi-torso"> By Chemsoft &nbsp;&nbsp;</i></span>
                                     <span><i class="fi-calendar"> 02-17-17 &nbsp;&nbsp;</i></span>
                                 </p>
@@ -394,15 +446,15 @@
                     </div>
                     <hr>
                     <div class="row">
-                        <div class="large-6 columns">
-                            <div class="w3-card-12" style="width:100%">
+                        <div class="large-4 columns">
+                            <div class="w3-hover-shadow" style="width:100%">
                                 <p><img src="https://placehold.it/600x370&text=Look at me!" alt="image for article" alt="article preview image"></p>
                             </div>
                         </div>
-                        <div class="large-6 columns">
-                            <header class="w3-container w3-blue" style="padding-top: 10px;">
-                                <h5><a href="#" style="color: white;">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
-                                <p>
+                        <div class="large-8 columns">
+                            <header class="w3-container w3-blue" style="padding-top: 10px; font-family: 'Pridi', serif;">
+                                <h5><a href="#" style="color: white; font-size: 1.2em;">Virtual Labs will provide to the students the result of an experiment by one of the following methods (or possibly a combination)</a></h5>
+                                <p style="font-size: 1.2em;">
                                     <span><i class="fi-torso"> By Chemsoft &nbsp;&nbsp;</i></span>
                                     <span><i class="fi-calendar"> 02-17-17 &nbsp;&nbsp;</i></span>
                                 </p>
@@ -427,7 +479,7 @@
                     </ul>
                 </article>
             </div>
-            <div class="large-4 columns">
+            <!-- <div class="large-4 columns">
                 <aside>
                     <br>
                     <div class="row column">
@@ -471,7 +523,7 @@
                         </div>
                     </div>
                 </aside>
-            </div>
+            </div> -->
         </div>
     </div>
     <footer class="footer">
